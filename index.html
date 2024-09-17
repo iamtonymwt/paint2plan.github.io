@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Paint to Plan: Painting Enables VLMs to Perform Imitation Learning">
+        content="Paint2Plan: Image Painting Enables Imitation Learning with VLMs">
   <meta name="keywords" content="Visual Language Model, Imitation Learning, Painting">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Paint to Plan | Painting Enables VLMs to Perform Imitation Learning</title>
+  <title>Paint2Plan: Image Painting Enables Imitation Learning with VLMs</title>
 
   <!-- Thumbnail for social media sharing -->
   <meta property="og:image" content="media/thumbnail.png">
@@ -94,7 +94,7 @@
     <div class="container is-fullhd">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Paint to Plan: Painting Enables VLMs to Perform Imitation Learning</h1>
+          <h1 class="title is-1 publication-title">Paint2Plan: Image Painting Enables Imitation Learning with VLMs</h1>
           <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a target="_blank" href="https://huangwl18.github.io/">Wenlong Huang</a><sup>1</sup>,
@@ -158,7 +158,7 @@
     <h2 class="title is-3">Abstract</h2>
     <div class="content has-text-justified">
       <p>
-        We show that by using the painting technique(painting grid lines, numbers, and trajectory lines on images), a single pretrained VLM could perform few-shot imitation learning by using their multi-modal pattern learning ability. Our method, Paint2Plan, uses a painted image as input and directly outputs the replanned trajectory of the end-effector in 6-DoF. By integrating painting in the perception, planning, and replanning, Paint2Plan enables robust performance in low-data regimes. Through extensive simulation and physical experiments, we show that Paint2Plan achieves on-par or superior performance on a variety of everyday tasks. A detailed ablation study confirms the VLM's ability to learn and integrate multi-modal patterns, and the effectiveness of our painting technique. This insight underscores the potential for future applications of VLMs to be used as single backbones in diverse and complex robotics tasks.
+        We show that by painting coordinate frames and trajectory lines onto images, a single pre-trained Vision Language Model (VLM) can perform few-shot imitation learning without any additional modules. Our method, Paint2Plan, uses a painted image as input and directly outputs the trajectory of the end-effector in 6 DoF, and undergoes replanning if necessary. By designing and integrating our image painting techniques in the perception, planning, and replanning phases, Paint2Plan enables robust performance in low-data regimes by enhancing the VLMs' multimodal pattern-learning ability. Through extensive simulation and physical experiments, we show that Paint2Plan achieves on-par or superior performance on a variety of everyday tasks, and a detailed ablation study confirms the effectiveness of our image painting techniques. This insight underscores the potential for future applications of VLMs to be used as single backbones in diverse and complex robotics tasks.
       </p>
     </div>
   </div>
