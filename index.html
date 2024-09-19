@@ -18,14 +18,6 @@
     window.dataLayer = window.dataLayer || [];
   </script>
 
-  <script>
-    window.addEventListener('load', function () {
-      var video = document.getElementById('dist1');
-      video.muted = true;  // 确保静音
-      video.play();  // 自动播放
-    });
-  </script>
-
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -98,16 +90,21 @@
 </section>
 
 
-<hr class="rounded">
-<div class="rows">
-  <h2 class="title is-3">Overview of Paint2Plan</h2>
-  <img src="media/figures/figure1.jpg" class="method-image" />
-  <p class="content has-text-justified">We introduce novel image painting techniques for our VLM-based trajectory prediction method that only requires a few (less than 10) demonstrations. The painted images enable VLMs to understand the scene, learn multimodal patterns, and replan trajectories if failure is detected.</b>
-  </p>
-</div>
-  
+<div class="container is-max-widescreen">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <hr class="rounded">
+      <div class="rows">
+        <h2 class="title is-3">Overview of Paint2Plan</h2>
+        <img src="media/figures/figure1.jpg" class="method-image" />
+        <p class="content has-text-justified">We introduce novel image painting techniques for our VLM-based trajectory prediction method that only requires a few (less than 10) demonstrations. The painted images enable VLMs to understand the scene, learn multimodal patterns, and replan trajectories if failure is detected.</b>
+        </p>
+      </div> 
+    </div>
+  </div>
 
   
+
 <div class="container is-max-widescreen">
 <div class="columns is-centered has-text-centered">
   <div class="column is-four-fifths">
@@ -137,7 +134,7 @@
   <p class="content has-text-justified">Please see our paper for full results, but the figures below summarise some of our experiments.
   </p>
 
-  <img src="media/figures/main_exp.png" class="method-image" />
+  <img src="media/figures/main_exp.png" is-3 class="method-image" />
   <p class="content has-text-justified">Success rates with 10 demonstrations for each task, for Paint2Plan, KAT with action tokens (act.), KAT with Cartesian positions and Euler angles (ang.) and Diffusion Policy.
   </p>
   
