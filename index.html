@@ -91,7 +91,7 @@
 </section>
 
 
-  <hr class="rounded">
+<hr class="rounded">
 <div class="rows">
   <h2 class="title is-3">Overview of Paint2Plan</h2>
   <img src="media/figures/figure1.jpg" class="method-image" />
@@ -134,13 +134,17 @@
   <p class="content has-text-justified">Success rates with 10 demonstrations for each task, for Paint2Plan, KAT with action tokens (act.), KAT with Cartesian positions and Euler angles (ang.) and Diffusion Policy.
   </p>
   
-  <img src="media/figures/number_demo.jpg" class="method-image" />
-  <p class="content has-text-justified">Success rates for the baselines and our method with varying numbers of demonstrations.
-  </p>
-
-  <img src="media/figures/keywaypoints_number.jpg" class="method-image" />
-  <p class="content has-text-justified">Success rates of our method under six varying numbers of key waypoints: none, extremely-less, less, equal, more, extremely-more, all compared to the number of objects in the scene.
-  </p>
+  <div class="columns">
+    <div class="column has-text-centered">
+      <img src="media/figures/number_demo.jpg" class="method-image" />
+      <p class="content has-text-justified">Success rates for the baselines and our method with varying numbers of demonstrations.</p>
+    </div>
+  
+    <div class="column has-text-centered">
+      <img src="media/figures/keywaypoints_number.jpg" class="method-image" />
+      <p class="content has-text-justified">Success rates of our method under six varying numbers of key waypoints: none, extremely-less, less, equal, more, extremely-more, all compared to the number of objects in the scene.</p>
+    </div>
+  </div>
 
   <img src="media/figures/VLM.png" class="method-image" />
   <p class="content has-text-justified">Success rates of different VLMs for the inference and critic phases.
