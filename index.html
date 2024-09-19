@@ -90,18 +90,16 @@
 </section>
 
 
-<div class="container is-max-widescreen">
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <hr class="rounded">
-      <div class="rows">
-        <h2 class="title is-3">Overview of Paint2Plan</h2>
-        <img src="media/figures/figure1.jpg" class="method-image" />
-        <p class="content has-text-justified">We introduce novel image painting techniques for our VLM-based trajectory prediction method that only requires a few (less than 10) demonstrations. The painted images enable VLMs to understand the scene, learn multimodal patterns, and replan trajectories if failure is detected.</b>
-        </p>
-      </div> 
-    </div>
+<div class="columns is-centered has-text-centered">
+  <div class="column is-five-fifths">
+    <hr class="rounded">
+    <div class="rows">
+      <img src="media/figures/figure1.jpg" class="method-image" />
+      <p class="content has-text-justified">We introduce novel image painting techniques for our VLM-based trajectory prediction method that only requires a few (less than 10) demonstrations. The painted images enable VLMs to understand the scene, learn multimodal patterns, and replan trajectories if failure is detected.</b>
+      </p>
+    </div> 
   </div>
+</div>
 
   
 
@@ -161,7 +159,7 @@
   <h2 class="title is-3">Video of Simulation Tasks</h2>
 
   <p class="content has-text-justified">
-  We now illustrate how Paint2Plan can solve robotics tasks. We use Gemini 1.5 Pro for inference, and Claude 3.5 Sonnet for the critic. For each task, we provide 10 demonstrations and replan for 1 iteration.
+  We now illustrate how Paint2Plan can solve robotics tasks in a simulation environment. The testing environment is built on Pybullet, using a Franka Emika Panda robot. We use Gemini 1.5 Pro for inference, and Claude 3.5 Sonnet for the critic. For each task, we provide 10 demonstrations and replan for 1 iteration.
   </p>
 
   <div class="columns is-multiline">
@@ -191,6 +189,102 @@
         <source src="media/simu_videos/mug_on_fork.mp4" type="video/mp4">
       </video>
       <p class="title is-5">Mug On Fork</p>
+    </div>
+
+    <div class="column is-half has-text-centered">
+      <video id="dist4" controls autoplay loop muted width="100%">
+        <source src="media/simu_videos/mug_pour_box.mp4" type="video/mp4">
+      </video>
+      <p class="title is-5">Mug Pour Box</p>
+    </div>
+
+    <div class="column is-half has-text-centered">
+      <video id="dist4" controls autoplay loop muted width="100%">
+        <source src="media/simu_videos/sponge_wipe_cubes.mp4" type="video/mp4">
+      </video>
+      <p class="title is-5">Sponge Wipe Cubes</p>
+    </div>
+
+    <div class="column is-half has-text-centered">
+      <video id="dist4" controls autoplay loop muted width="100%">
+        <source src="media/simu_videos/sponge_wipe_mug.mp4" type="video/mp4">
+      </video>
+      <p class="title is-5">Sponge Wipe Mug</p>
+    </div>
+
+    <div class="column is-half has-text-centered">
+      <video id="dist4" controls autoplay loop muted width="100%">
+        <source src="media/simu_videos/upright_fork.mp4" type="video/mp4">
+      </video>
+      <p class="title is-5">Upright Fork</p>
+    </div>
+  </div>
+</div>
+
+
+<hr class="rounded">
+<div class="rows">
+  <h2 class="title is-3">Video of Real World Tasks</h2>
+
+  <p class="content has-text-justified">
+  We conduct real-world experiments with a Kinova 'MICO2' robot on 4 tasks, and each with two variants (with and without distractors), totalling 8 cases. We provide 10 demonstrations and replan for 1 iteration.
+  </p>
+
+  <div class="columns is-multiline">
+    <div class="column is-half has-text-centered">
+      <video id="dist1" loop muted width="100%">
+        <source src="media/real_videos/sponge_on_box_clear.MOV" type="video/mp4">
+      </video>
+      <p class="title is-5">Sponge On Box(w/o)</p>
+    </div>
+
+    <div class="column is-half has-text-centered">
+      <video id="dist2" controls autoplay loop muted width="100%">
+        <source src="media/real_videos/sponge_on_box_obs.MOV" type="video/mp4">
+      </video>
+      <p class="title is-5">Sponge On Box(w/)</p>
+    </div>
+
+    <div class="column is-half has-text-centered">
+      <video id="dist3" controls autoplay loop muted width="100%">
+        <source src="media/real_videos/sponge_on_sponge_clear.MOV" type="video/mp4">
+      </video>
+      <p class="title is-5">Sponge On Sponge(w/o)</p>
+    </div>
+
+    <div class="column is-half has-text-centered">
+      <video id="dist4" controls autoplay loop muted width="100%">
+        <source src="media/real_videos/sponge_on_sponge_obs.MOV" type="video/mp4">
+      </video>
+      <p class="title is-5">Sponge On Sponge(w/)</p>
+    </div>
+
+    <div class="column is-half has-text-centered">
+      <video id="dist4" controls autoplay loop muted width="100%">
+        <source src="media/real_videos/stirring_clear_1.MOV" type="video/mp4">
+      </video>
+      <p class="title is-5">Stirring(w/o)</p>
+    </div>
+
+    <div class="column is-half has-text-centered">
+      <video id="dist4" controls autoplay loop muted width="100%">
+        <source src="media/real_videos/stirring_obs_1.MOV" type="video/mp4">
+      </video>
+      <p class="title is-5">Stirring(w/)</p>
+    </div>
+
+    <div class="column is-half has-text-centered">
+      <video id="dist4" controls autoplay loop muted width="100%">
+        <source src="media/real_videos/toast_clear.MOV" type="video/mp4">
+      </video>
+      <p class="title is-5">Toast(w/o)</p>
+    </div>
+
+    <div class="column is-half has-text-centered">
+      <video id="dist4" controls autoplay loop muted width="100%">
+        <source src="media/real_videos/toast_obs.MOV" type="video/mp4">
+      </video>
+      <p class="title is-5">Toast(w/)</p>
     </div>
   </div>
 </div>
